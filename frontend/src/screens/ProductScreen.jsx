@@ -3,13 +3,27 @@ import { useParams } from "react-router-dom"
 import { Link } from 'react-router-dom';
 import { Row, Col, Image, ListGroup, Card, Button} from 'react-bootstrap'
 import Rating from "../components/Rating"
-import products from "../products"
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+//import products from "../products"// //from before//
+
+
 
 const ProductScreen = () => {
+    const [product, setProduct] = useState({})
+
     const { id: productId } = useParams()
-    //sets 'product' as the product name by comparing it to url ID
-    const product = products.find((p) => p._id === productId)
-    console.log(product)
+
+    //fetches data from backend
+    useEffect(() => {
+        const fetchProducts = async () => {
+            const { data } = await axios.get(`/api/products/${productId}`);
+            setProduct(data); 
+        }
+
+        fetchProducts();
+    }, [productId]) //added productID as a dependency, which means that if this changes,
+                    //useEffect runs again
 
   return (
     <>
@@ -30,7 +44,7 @@ const ProductScreen = () => {
                         text={`${product.numReviews} reviews`} />
                     </ListGroup.Item>
                     <ListGroup.Item>
-                            Description: aoilnfiouenoifnsoe ifjiwjeiof j
+                            {product.description}
                     </ListGroup.Item>
                 </ListGroup>
             </Col>

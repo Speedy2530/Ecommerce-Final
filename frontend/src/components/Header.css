@@ -1,0 +1,36 @@
+/* Header.css */
+
+/* Navbar styles */
+.custom-navbar {
+    background-color: #2c3e50; /* Background color */
+    padding: 15px 0; /* Padding at the top and bottom */
+  }
+  
+  /* Brand styles */
+  .custom-brand {
+    color: #ecf0f1; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Font weight */
+  }
+
+  .custom-brand:hover {
+    color: #ecf0f1;
+  }
+  
+  /* Link styles */
+  .custom-link {
+    color: #ecf0f1; /* Text color */
+    font-size: 16px; /* Font size */
+    margin-right: 15px; /* Margin between links */
+  }
+  
+  .custom-link:hover {
+    color: #3498db; /* Hover color */
+  }
+  
+  /* Cart and Sign In icons styles */
+  .custom-icon {
+    font-size: 18px; /* Font size */
+    margin-right: 5px; /* Margin between icon and text */
+  }
+  
