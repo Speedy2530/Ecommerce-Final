@@ -47,7 +47,7 @@ const destroyData = async () => {
         console.log('Data Destroyed!');
         process.exit();
     } catch (error) {
-        onsole.error(`${error}`);
+        console.error(`${error}`);
         process.exit(1); 
     }
 }

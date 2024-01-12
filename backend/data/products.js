@@ -1,16 +1,16 @@
 //Temporary. Will fetch from other places soon, but hard-coding examples for now.
 const products = [
     {
-      name: 'Airpods Wireless Bluetooth Headphones',
-      image: '/images/airpods.jpg',
+      name: 'Marvel SpiderMan Blanket',
+      image: '/images/spiderman.jpg',
       description:
-        'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-      brand: 'Apple',
-      category: 'Electronics',
-      price: 89.99,
-      countInStock: 10,
+        'Made of some high quality materials that I am not familiar with, this product is guaranteed to provide you with warmth and comfort during trying times.',
+      brand: 'Marvel',
+      category: 'Blankets',
+      price: 20.10,
+      countInStock: 9,
       rating: 4.5,
-      numReviews: 12,
+      numReview: 8,
     },
     {
       name: 'iPhone 11 Pro 256GB Memory',
@@ -22,7 +22,7 @@ const products = [
       price: 599.99,
       countInStock: 7,
       rating: 4.0,
-      numReviews: 8,
+      numReview: 8,
     },
     {
       name: 'Cannon EOS 80D DSLR Camera',
@@ -34,7 +34,7 @@ const products = [
       price: 929.99,
       countInStock: 5,
       rating: 3,
-      numReviews: 12,
+      numReview: 12,
     },
     {
       name: 'Sony Playstation 4 Pro White Version',
@@ -46,7 +46,7 @@ const products = [
       price: 399.99,
       countInStock: 11,
       rating: 5,
-      numReviews: 12,
+      numReview: 12,
     },
     {
       name: 'Logitech G-Series Gaming Mouse',
@@ -58,7 +58,7 @@ const products = [
       price: 49.99,
       countInStock: 7,
       rating: 3.5,
-      numReviews: 10,
+      numReview: 10,
     },
     {
       name: 'Amazon Echo Dot 3rd Generation',
@@ -70,7 +70,7 @@ const products = [
       price: 29.99,
       countInStock: 0,
       rating: 4,
-      numReviews: 12,
+      numReview: 12,
     },
   ]
   
