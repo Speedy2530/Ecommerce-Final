@@ -6,7 +6,7 @@ import users from "./data/users.js";
 import products from "./data/products.js";
 import User from "./models/userModel.js"; //making queries to database is always done through models
 import Product from "./models/productModel.js";
-import Order from "./models/orderMode.js";
+import Order from "./models/orderModel.js";
 import connectDB from "./config/db.js";
 
 dotenv.config(); //using global env variables

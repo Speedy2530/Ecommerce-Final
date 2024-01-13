@@ -3,7 +3,7 @@ import bcrypt from 'bcryptjs'; //hashes user password (makes it hashtag symbols)
 const users = [
     {
         name: 'Saihej Singh',
-        email: 'bla@gmaiil.com',
+        email: 'bla@gmail.com',
         password: bcrypt.hashSync('123456', 10), //plaintext password bad idea, bcrypt replaces
         idAdmin: true,
     },
@@ -15,7 +15,7 @@ const users = [
     },
     {
         name: 'hee hee',
-        email: 'heehee@gmaiil.com',
+        email: 'heehee@gmail.com',
         password: bcrypt.hashSync('123456', 10), //plaintext password bad idea, bcrypt replaces
         idAdmin: false,
     }

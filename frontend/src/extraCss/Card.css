@@ -1,0 +1,16 @@
+.product-image {
+    width: 100%; /* Make the image fill its container */
+    height: 100%;
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  /* Set a fixed height for the card body */
+  .card-body {
+    height: 100%; /* 100% of the parent container (Card) height */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardWrapper {
+    height: 90%;
+  }

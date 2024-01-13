@@ -2,12 +2,12 @@
 const products = [
     {
       name: 'Marvel SpiderMan Blanket',
-      image: '/images/spiderman.jpg',
+      image: '/images/airpods.jpg',
       description:
         'Made of some high quality materials that I am not familiar with, this product is guaranteed to provide you with warmth and comfort during trying times.',
       brand: 'Marvel',
       category: 'Blankets',
-      price: 20.10,
+      price: 20.11,
       countInStock: 9,
       rating: 4.5,
       numReview: 8,
