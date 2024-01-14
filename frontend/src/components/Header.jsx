@@ -6,6 +6,7 @@ import logo from '../Assets/logo.png';
 import { useNavigate } from 'react-router-dom'
 import { useLogoutMutation } from '../slices/userApiSlice';
 import { logout } from '../slices/authSlice';
+import SearchBox from './SearchBox';
 import '../extraCss/Header.css' // Import your custom CSS file for styling
 
 const Header = () => {
@@ -32,16 +33,17 @@ const Header = () => {
       <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>
-              {/* <img src={logo} alt='ProShop' /> */}
-              SShop
+            <Navbar.Brand className='d-flex align-items-center'>
+              <img src={logo} alt='' className='main-logo'/>
+              <h2 className='ml-6 mb-0' style={{color: '#ecf0f1'}}>Shop</h2>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ms-auto'>
+              <SearchBox /> 
               <LinkContainer to='/cart'>
-                <Nav.Link>
+                <Nav.Link className='custom-link'>
                   <FaShoppingCart /> Cart
                   {cartItems.length > 0 && (
                     <Badge pill bg='success' style={{ marginLeft: '5px' }}>

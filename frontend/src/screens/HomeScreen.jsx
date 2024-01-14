@@ -1,8 +1,12 @@
 import { Row, Col } from 'react-bootstrap'
+import { useParams } from 'react-router-dom' //allows access to url items
 import Product from '../components/Product'
 import { useGetProductsQuery } from '../slices/productsApiSlice.js';
 import Loader from '../components/Loader.jsx';
 import Message from '../components/Message.jsx'
+import Paginate from '../components/Paginate.jsx';
+import { Link } from 'react-router-dom';
+import ProductCarousel from '../components/ProductCarousel.jsx';
 //import products from '../products'// //when we were manually importing//
 // import { useEffect, useState } from 'react'; //
 // import axios from 'axios';
@@ -23,10 +27,14 @@ const HomeScreen = () => {
   //   fetchProducts();
   // }, [])
 
-  const { data: products, isLoading, error } = useGetProductsQuery();
+  const { pageNumber, keyword } = useParams()
+
+  const { data, isLoading, error } = useGetProductsQuery({ keyword, pageNumber });
 
   return (
     <>
+        { !keyword ? <ProductCarousel /> : 
+          <Link to='/' className='btn btn-light mb-4'>Go back</Link>}
         { isLoading ? (
           <Loader />
         ) : error ? (
@@ -35,13 +43,22 @@ const HomeScreen = () => {
         <>
         <h1>Latest Products</h1>
         <Row>
-            {products.map((product) => (
+            {data.products.map((product) => (
                 <Col key={product.id} sm={12} md={6} lg={4} xl={3}>
                     <Product product={product} />
                 </Col>
             ))}
         </Row>
-        </>) }
+        <div className='text-center'>
+          <div className='d-inline-block'>
+              <Paginate 
+              pages={data.pages}
+              page={data.page}
+              keyword={keyword ? keyword : ''}/>
+          </div>
+        </div>
+        </>
+      )}
     </>
   )
 }

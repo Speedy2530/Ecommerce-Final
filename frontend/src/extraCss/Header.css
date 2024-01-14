@@ -30,3 +30,7 @@
     margin-right: 5px; /* Margin between icon and text */
   }
   
+  .main-logo {
+    height: 40px;
+    margin-right: 0px;
+  }
