@@ -20,10 +20,9 @@ const Product = ({ product }) => {
 
         <Card.Text as='div'>
           <Rating value={ product.rating } text={`${product.numReview} reviews`} />
-        </Card.Text>
-
-        <Card.Text as="h3" className="mt-auto"> {/* mt-auto pushes the price to the bottom */}
+          <Card.Text as="h3" className="mt-1"> {/* mt-auto pushes the price to the bottom */}
           ${product.price}
+        </Card.Text>
         </Card.Text>
       </Card.Body>
     </Card>

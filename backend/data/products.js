@@ -2,7 +2,7 @@
 const products = [
     {
       name: 'Marvel SpiderMan Blanket',
-      image: '/images/airpods.jpg',
+      image: '/images/spiderman.jpg',
       description:
         'Made of some high quality materials that I am not familiar with, this product is guaranteed to provide you with warmth and comfort during trying times.',
       brand: 'Marvel',

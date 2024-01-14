@@ -14,3 +14,14 @@
   .cardWrapper {
     height: 90%;
   }
+
+  .carousel-image {
+    height: 500px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .carousel {
+    height: 500px;
+  }
+

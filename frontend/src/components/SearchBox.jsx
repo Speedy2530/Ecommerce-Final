@@ -10,7 +10,7 @@ const SearchBox = () => {
     const submitHandler = (e) => {
         e.preventDefault();
         if (keyword.trim()) {
-            setKeyword('')
+            // setKeyword('') doesn't work for some reason, the placeholder stays the same
             navigate(`/search/${keyword}`)
         } else {
             navigate('/')
