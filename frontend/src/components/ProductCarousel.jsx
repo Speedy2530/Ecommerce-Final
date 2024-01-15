@@ -3,6 +3,7 @@ import { Carousel, Image } from 'react-bootstrap'
 import Loader from "./Loader"
 import Message from "./Message"
 import { useGetTopProductsQuery } from "../slices/productsApiSlice"
+import '../Assets/styles/index.css'
 import '../extraCss/Card.css'
 
 
