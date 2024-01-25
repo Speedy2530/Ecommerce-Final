@@ -33,7 +33,7 @@ const HomeScreen = () => {
 
   return (
     <>
-        { !keyword ? <ProductCarousel /> : 
+        { !keyword ? <ProductCarousel className='mt-4'/> : 
           <Link to='/' className='btn btn-light mb-4'>Go back</Link>}
         { isLoading ? (
           <Loader />
