@@ -1,0 +1,11 @@
+{
+    "builds": [
+      {
+        "src": ".",
+        "use": "@vercel/node"
+      }
+    ],
+    "env": {
+      "CI": "false"
+    }
+}
