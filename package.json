@@ -26,6 +26,7 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "dotenv": "^16.3.1",
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "@babel/plugin-transform-private-property-in-object": "^7.18.0"
   }
 }

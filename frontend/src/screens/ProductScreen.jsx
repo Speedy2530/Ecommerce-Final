@@ -6,7 +6,7 @@ import Rating from "../components/Rating";
 import { useDispatch, useSelector } from 'react-redux';
 import { useGetProductDetailsQuery, useCreateReviewMutation } from "../slices/productsApiSlice";
 import Message from "../components/Message";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { addToCart } from '../slices/cartSlice';
 import { toast } from "react-toastify";
 import Loader from "../components/Loader";
