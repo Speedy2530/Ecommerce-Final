@@ -1,5 +1,5 @@
 Link: https://sshop-ecommerce.onrender.com/
-(May take a few seconds to load due to free deployment method)
+(May take a minute to load due to free deployment method)
 
 **Website Features**
 - Full-featured shopping cart with quantity
