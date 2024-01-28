@@ -10,7 +10,7 @@ import '../extraCss/Card.css'
 const ProductCarousel = () => {
     const { data: products, isLoading, error} = useGetTopProductsQuery()
 
-  return isLoading ? <Loader /> : error ? <Message variant='danger'>{error}</Message>
+  return isLoading ? <> </> : error ? <Message variant='danger'>{error}</Message>
   : (
     <div className='carousel-container'>
     <Carousel pause='hover' className='bg-primary mb-4 mt-0 carousel'>
