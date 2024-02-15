@@ -11,7 +11,6 @@
     height: auto; 
   }
   
-  /* Set a fixed height for the card body */
   .card-body {
     height: 100%; 
     display: flex;
@@ -25,12 +24,48 @@
   .carousel-image {
     height: 500px;
     width: auto;
-    margin: 0 auto;
+    margin: 0 0;
   }
 
   .carousel {
     height: 500px;
-    /* width: 100vw; */
   }
 
- 
+  .image-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; 
+  }
+  
+  .hello-text {
+    margin-left: 40px; /* Adjust margin */
+    color: rgba(255, 255, 255, 0.812);
+    font-size: 17.5px;
+    margin-top: 30px;
+    text-decoration: wavy;
+    padding-right: 25px;
+  }
+  
+  .carousel-header {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 10px; 
+    text-decoration:underline;
+    color: white;
+  } 
+
+  .rating-size {
+    font-size: 24px;
+  }
+  
+  
+  /* Gets rid of the reviews if screensize is too small */
+  @media (max-width: 1200px) {
+    .hello-text {
+      display: none;
+    }
+    .image-container {
+      justify-content: center;
+    }
+  }
+  
