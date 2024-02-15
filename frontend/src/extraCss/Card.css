@@ -47,7 +47,7 @@
   }
   
   .carousel-header {
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 35px;
     margin-bottom: 10px; 
     text-decoration:underline;
