@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect className='mb-0'>
+      <Navbar bg='primary' expand='lg' collapseOnSelect className='mb-0'>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand className='d-flex align-items-center'>
@@ -67,7 +67,7 @@ const Header = () => {
                 </NavDropdown>
               ) : (
                 <LinkContainer to="/login">
-                <Nav.Link className="custom-link">
+                <Nav.Link className='custom-link'>
                   <FaUser /> Sign In
                 </Nav.Link>
               </LinkContainer>

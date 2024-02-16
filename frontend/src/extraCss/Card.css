@@ -29,20 +29,34 @@
 
   .carousel {
     height: 500px;
+    border-radius: 20px;
   }
 
   .image-container {
     display: flex;
     align-items: flex-start; /* Align items to the top */
     justify-content: flex-start; 
+    border-radius: 20px;
+  }
+
+  .carousel-image {
+    border-radius: -20px;
+  }
+
+  .carousel {
+    border-radius: 20px;
+    overflow:hidden;
   }
   
+  .carousel-caption {
+    border-radius: 0 0 20px 20px;
+  }
+
   .hello-text {
     margin-left: 40px; /* Adjust margin */
     color: rgba(255, 255, 255, 0.812);
     font-size: 17.5px;
     margin-top: 30px;
-    text-decoration: wavy;
     padding-right: 25px;
   }
   
@@ -50,7 +64,7 @@
     /* font-weight: bold; */
     font-size: 35px;
     margin-bottom: 10px; 
-    text-decoration:underline;
+    font-style: italic;
     color: white;
   } 
 
