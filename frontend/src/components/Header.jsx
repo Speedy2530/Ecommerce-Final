@@ -58,7 +58,7 @@ const Header = () => {
                 </Nav.Link>
               </LinkContainer>
               { userInfo ? (
-                <NavDropdown title={userInfo.name} id='username'>
+                <NavDropdown title={userInfo.name} id='username' className='custom-link'>
                   <LinkContainer to='/profile'>
                     <NavDropdown.Item>
                       Profile

@@ -20,6 +20,14 @@
     color: #3498db !important; 
   }
   
+  #username {
+    color: #ecf0f1 !important;
+  }
+
+  #username:hover {
+    color: #3498db !important; 
+  }
+
   /* Additional style for signed-in state */
   .custom-link.signed-in {
     color: #ecf0f1 !important; /* Set color for signed-in state */
