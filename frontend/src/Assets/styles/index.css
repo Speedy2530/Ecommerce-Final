@@ -1,3 +1,7 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 main {
   min-height: 80vh;
 }
@@ -41,6 +45,10 @@ table th {
 
 .review button {
   margin-top: 10px;
+}
+
+h1 {
+  color: #333;
 }
 
 .carousel-caption {

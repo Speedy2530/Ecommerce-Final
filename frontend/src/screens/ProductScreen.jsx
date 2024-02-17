@@ -93,7 +93,7 @@ const ProductScreen = () => {
             <Col md={4}>
                 <ListGroup variant='flush'>
                     <ListGroup.Item>
-                        <h3>{product.name}</h3>
+                        <h3 style={{color: '#333'}}>{product.name}</h3>
                     </ListGroup.Item>
                     <ListGroup.Item>
                         {console.log(product)}

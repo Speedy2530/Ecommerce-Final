@@ -39,7 +39,7 @@ const ProductCarousel = () => {
               <div className="image-container">
                 <Image src={product.image} alt={product.name} className="carousel-image" />
                 <div className="hello-text">
-                    <div className='carousel-header'>Top Review</div>
+                    <div className='carousel-header'>Featured</div>
                        
                         <>
                             <div style={{color: 'white', fontSize: '18px'}}><strong>Author: </strong>{getTopRatedReview(product.reviews).name}</div>
