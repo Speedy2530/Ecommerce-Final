@@ -19,6 +19,7 @@
 
   .cardWrapper {
     height: 90%;
+    border: 2px dashed rgb(221, 221, 221);
   }
 
   .carousel-image {
@@ -29,28 +30,21 @@
 
   .carousel {
     height: 500px;
-    border-radius: 20px;
   }
 
   .image-container {
     display: flex;
     align-items: flex-start; /* Align items to the top */
     justify-content: flex-start; 
-    border-radius: 20px;
-  }
-
-  .carousel-image {
-    border-radius: -20px;
   }
 
   .carousel {
     border-radius: 20px;
     overflow:hidden;
+    box-shadow: 1px 1px 2px 2px rgba(17, 26, 71, 0.244);
+    /* border: 1.5px solid rgb(35, 49, 139); */
   }
   
-  .carousel-caption {
-    border-radius: 0 0 20px 20px;
-  }
 
   .hello-text {
     margin-left: 40px; /* Adjust margin */
@@ -64,8 +58,8 @@
     /* font-weight: bold; */
     font-size: 35px;
     margin-bottom: 10px; 
-    font-style: italic;
     color: white;
+    text-decoration: none;
   } 
 
   .rating-size {
