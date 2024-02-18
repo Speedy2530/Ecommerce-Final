@@ -19,7 +19,13 @@
 
   .cardWrapper {
     height: 90%;
-    border: 2px dashed rgb(221, 221, 221);
+    border: 1px dashed rgb(221, 221, 221);
+    transition: all 0.3s ease;
+  }
+
+  .cardWrapper:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgba(17, 26, 71, 0.3);
   }
 
   .carousel-image {
@@ -37,7 +43,7 @@
   .carousel {
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 1px 1px 2px 2px rgba(17, 26, 71, 0.3);
+    box-shadow: 0 0 10px rgba(17, 26, 71, 0.3);
   }
   
 
@@ -77,3 +83,8 @@
     }
   }
   
+  .productPage-image {
+    box-shadow: 0 0 5px rgb(222, 222, 222);
+  }
+  
+ 

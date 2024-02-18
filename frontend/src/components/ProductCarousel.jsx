@@ -31,7 +31,8 @@ const ProductCarousel = () => {
       <Carousel pause="hover" 
                 style={{
                   backgroundColor: '#333',
-                }} className="mb-4 mt-0 carousel">
+                  // marginTop: '85px'
+                }} className="mb-4 carousel">
 
         {products.map((product, index) => (
           <Carousel.Item key={product._id}>

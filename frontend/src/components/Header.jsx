@@ -32,7 +32,7 @@ const Header = () => {
     <header>
       <Navbar style={{backgroundColor: '#333',
                       }} 
-                      expand='lg' collapseOnSelect className='mb-0'>
+                      expand='lg' collapseOnSelect className='mb-0 main-navbar'>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand className='d-flex align-items-center'>

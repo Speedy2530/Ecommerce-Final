@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { addToCart } from '../slices/cartSlice';
 import { toast } from "react-toastify";
 import Loader from "../components/Loader";
+import '../extraCss/Card.css';
 // import axios from 'axios';
 //import products from "../products"// //from before//
 
@@ -88,7 +89,7 @@ const ProductScreen = () => {
             <>
             <Row>
             <Col md={5}>
-                <Image src={product.image} alt={product.name} fluid rounded/>
+                <Image src={product.image} alt={product.name} fluid rounded className="productPage-image"/>
             </Col>
             <Col md={4}>
                 <ListGroup variant='flush'>
