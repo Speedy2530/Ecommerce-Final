@@ -40,6 +40,10 @@
     justify-content: flex-start; 
   }
 
+  .carousel-container {
+    margin: 0 auto; /* Center the carousel horizontally */
+  }
+
   .carousel {
     border-radius: 20px;
     overflow: hidden;
