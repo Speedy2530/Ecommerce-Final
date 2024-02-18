@@ -31,7 +31,6 @@ const Header = () => {
   return (
     <header>
       <Navbar style={{backgroundColor: '#333',
-                      height: '75px',
                       }} 
                       expand='lg' collapseOnSelect className='mb-0'>
         <Container>
@@ -44,7 +43,7 @@ const Header = () => {
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ms-auto'>
+            <Nav className='ms-auto custom-navbar'>
               <SearchBox /> 
 
               <LinkContainer to='/cart'>
