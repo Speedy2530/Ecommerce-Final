@@ -5,10 +5,13 @@ import 'react-toastify/dist/ReactToastify.css'
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import { BrowserRouter as Router } from 'react-router-dom';
+import Scroller from "./components/Scroller";
+
 
 const App = () => {
   return (
     <>
+      <Scroller />
       <Header />
       <main className="py-3">
         <Container>
