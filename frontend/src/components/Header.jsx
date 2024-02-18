@@ -39,12 +39,7 @@ const Header = () => {
             <Navbar.Brand className='d-flex align-items-center'>
               <img src={logo} alt='' className='main-logo'/>
               <h2 className='ml-6 mb-0' style={{color: '#ecf0f1', fontSize: '30px'}}>Shop</h2>
-              <h3 className='ml-6 mb-0' style={{color: '#ecf0f1', 
-                                                fontSize: '18px',
-                                                fontStyle: 'italic',
-                                                marginLeft: '30px',
-                                                marginTop: '5px',
-                                                opacity: '90%'}}>Enjoy our strange selection of supplies!</h3>
+              <h3 className='ml-6 mb-0 slogan'>Enjoy our strange selection of supplies!</h3>
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
